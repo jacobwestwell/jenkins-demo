@@ -15,6 +15,7 @@ pipelineJob('spring-demo-job') {
                         url 'https://github.com/jacobwestwell/spring-demo.git'
                     }
                     branch 'main'
+                    scriptPath('Jenkinsfile-docker')
                 }
             }
         }
