@@ -1,12 +1,4 @@
-//pipelineJob('pipelineJob') {
-//    definition {
-//        cps {
-//            script(readFileFromWorkspace('pipelineJob.groovy'))
-//            sandbox()
-//        }
-//    }
-//}
-pipelineJob('spring-demo-job') {
+pipelineJob('spring-demo-deploy-production-job') {
     definition {
         cpsScm {
             scm {
@@ -15,7 +7,34 @@ pipelineJob('spring-demo-job') {
                         url 'https://github.com/jacobwestwell/spring-demo.git'
                     }
                     branch 'main'
-//                    scriptPath('Jenkinsfile-docker')
+                }
+            }
+        }
+    }
+}
+pipelineJob('spring-demo-deploy-pre-production-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/jacobwestwell/spring-demo.git'
+                    }
+                    branch 'preprod'
+                }
+            }
+        }
+    }
+}
+pipelineJob('spring-demo-deploy-development-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/jacobwestwell/spring-demo.git'
+                    }
+                    branch 'develop'
                 }
             }
         }
