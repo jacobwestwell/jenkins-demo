@@ -1,0 +1,408 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Multiply two numbers",
+        "description": "",
+        "id": "calculator-multiply;multiply-two-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 209082200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c10\u003e but was:\u003c60\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat com.adaptavist.tm4j.cucumberExample.stepDefinition.CalculatorTest.numbersAreMultiplied(CalculatorTest.java:28)\r\n\tat ✽.I multiply 12 and 5 and the result is 10(src/test/resources/calculatorFeatures/CalculatorMultiply.feature:6)\r\n",
+              "duration": 3632500,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I multiply 12 and 5 and the result is 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 11
+                },
+                {
+                  "val": "5",
+                  "offset": 18
+                },
+                {
+                  "val": "10",
+                  "offset": 38
+                }
+              ],
+              "location": "CalculatorTest.numbersAreMultiplied(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T1"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Multiply two numbers",
+        "description": "",
+        "id": "calculator-multiply;multiply-two-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 73600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I multiply 20 and 5 and the result is 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 11
+                },
+                {
+                  "val": "5",
+                  "offset": 18
+                },
+                {
+                  "val": "100",
+                  "offset": 38
+                }
+              ],
+              "location": "CalculatorTest.numbersAreMultiplied(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T1"
+          }
+        ]
+      }
+    ],
+    "name": "Calculator Multiply",
+    "description": "",
+    "id": "calculator-multiply",
+    "keyword": "Feature",
+    "uri": "src/test/resources/calculatorFeatures/CalculatorMultiply.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Subtract two numbers",
+        "description": "",
+        "id": "calculator-subtract;subtract-two-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 122800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I subtract 30 and 10 and the result is 20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 18
+                },
+                {
+                  "val": "20",
+                  "offset": 39
+                }
+              ],
+              "location": "CalculatorTest.numbersAreSubtracted(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T2"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Subtract two numbers",
+        "description": "",
+        "id": "calculator-subtract;subtract-two-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 62300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I subtract 40 and 40 and the result is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 11
+                },
+                {
+                  "val": "40",
+                  "offset": 18
+                },
+                {
+                  "val": "0",
+                  "offset": 39
+                }
+              ],
+              "location": "CalculatorTest.numbersAreSubtracted(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T2"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Subtract other two numbers",
+        "description": "",
+        "id": "calculator-subtract;subtract-other-two-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 58300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c20\u003e but was:\u003c10\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat com.adaptavist.tm4j.cucumberExample.stepDefinition.CalculatorTest.numbersAreSubtracted(CalculatorTest.java:23)\r\n\tat ✽.I subtract 30 and 20 and the result is 20(src/test/resources/calculatorFeatures/CalculatorSubtract.feature:17)\r\n",
+              "duration": 260100,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I subtract 30 and 20 and the result is 20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 11
+                },
+                {
+                  "val": "20",
+                  "offset": 18
+                },
+                {
+                  "val": "20",
+                  "offset": 39
+                }
+              ],
+              "location": "CalculatorTest.numbersAreSubtracted(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T3"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Subtract other two numbers",
+        "description": "",
+        "id": "calculator-subtract;subtract-other-two-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 71300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I subtract 40 and 35 and the result is 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 11
+                },
+                {
+                  "val": "35",
+                  "offset": 18
+                },
+                {
+                  "val": "5",
+                  "offset": 39
+                }
+              ],
+              "location": "CalculatorTest.numbersAreSubtracted(long,long,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T3"
+          }
+        ]
+      }
+    ],
+    "name": "Calculator Subtract",
+    "description": "",
+    "id": "calculator-subtract",
+    "keyword": "Feature",
+    "uri": "src/test/resources/calculatorFeatures/CalculatorSubtract.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Sum two numbers",
+        "description": "",
+        "id": "calculator-sum;sum-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 89600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a calculator I just turned on",
+            "match": {
+              "location": "CalculatorTest.aCalculatorIJustTurnedOn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 187100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I sum 4 and 4 and the result is 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 6
+                },
+                {
+                  "val": "4",
+                  "offset": 12
+                },
+                {
+                  "val": "8",
+                  "offset": 32
+                }
+              ],
+              "location": "CalculatorTest.numbersAreSummedUp(int,int,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCaseKey\u003dTS-T4"
+          }
+        ]
+      }
+    ],
+    "name": "Calculator Sum",
+    "description": "",
+    "id": "calculator-sum",
+    "keyword": "Feature",
+    "uri": "src/test/resources/calculatorFeatures/CalculatorSum.feature",
+    "tags": []
+  }
+]
